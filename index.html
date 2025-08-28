@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Olis</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+
+
+<!-- HEADER SECTION START -->
+<header class="header">
+  <div class="container">
+    <a class="logo" href="#">
+      <img src="img/logo.svg" alt="Olis logo">
+    </a>
+    <nav class="nav">
+      <ul class="nav_links">
+        <li><a href="#">О компании <i class="fa fa-chevron-down"></i></a></li>
+        <li><a href="#">Объекты <i class="fa fa-chevron-down"></i></a></li>
+        <li><a href="#">Пресс-центр <i class="fa fa-chevron-down"></i></a></li>
+        <li><a href="#">Видео</a></li>
+        <li><a href="#">Контакты <i class="fa fa-chevron-down"></i></a></li>
+      </ul>
+      <ul class="nav_sub_links">
+        <li><a href="#">Комплексные решения <i class="fa fa-chevron-down"></i></a></li>
+        <li><a href="#">Наше оборудование <i class="fa fa-chevron-down"></i></a></li>
+        <li><a href="#">Оснащение лабораторий <i class="fa fa-chevron-down"></i></a></li>
+        <li><a href="#">Услуги компании <i class="fa fa-chevron-down"></i></a></li>
+      </ul>
+    </nav>
+    <div class="header_right">
+      <i class="fa fa-search icon"></i>
+      <select class="lang_select">
+        <option>RU</option>
+        <option>EN</option>
+        <option>UZ</option>
+      </select>
+      <div class="phone">
+        <span class="label">Наши номера:</span>
+        <div class="number">
+          <i class="fa fa-phone"></i>
+          <a href="tel:+380578228558">+38 (057) 822-85-58</a>
+        </div>
+      </div>
+      <div class="hamburger" id="hamburger"><i class="fa fa-bars"></i></div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile_links">
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Объекты</a></li>
+        <li><a href="#">Пресс-центр</a></li>
+        <li><a href="#">Видео</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Комплексные решения</a></li>
+        <li><a href="#">Наше оборудование</a></li>
+        <li><a href="#">Оснащение лабораторий</a></li>
+        <li><a href="#">Услуги компании</a></li>
+      </ul>
+      <div class="mobile_bottom">
+        <select class="lang_select">
+          <option>RU</option>
+          <option>EN</option>
+          <option>UZ</option>
+        </select>
+        <div class="phone">
+          <span class="label">Наши номера:</span>
+          <div class="number">
+            <i class="fa fa-phone"></i>
+            <a href="tel:+380578228558">+38 (057) 822-85-58</a>
+          </div>
+        </div>
+        <i class="fa fa-search icon"></i>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- HEADER SECTION END -->
+<script>
+  // Hamburger menu toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+</script>
+
+
+
+
 
 </body>
 </html>
