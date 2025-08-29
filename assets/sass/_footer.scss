@@ -1,0 +1,118 @@
+/* --- FOOTER --- */
+.footer-section {
+  margin-top: 38px;
+  background: #fffef7;
+  border-top: 1.5px solid #ffe6a7;
+  padding: 24px 0 0 0;
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .footer-logo {
+      flex: 1 1 0;
+      img {
+        width: 100px;
+        max-width: 90vw;
+      }
+    }
+    .footer-links {
+      flex: 2 1 0;
+      display: flex;
+      gap: 34px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      a {
+        color: #666;
+        font-size: 15px;
+        text-decoration: none;
+        transition: color 0.2s;
+        &:hover {
+          color: #ffb41c;
+        }
+      }
+    }
+    .footer-contacts {
+      flex: 2 1 0;
+      text-align: right;
+      min-width: 180px;
+      p {
+        font-size: 13px;
+        color: #333;
+        margin-bottom: 4px;
+      }
+      .footer-social {
+        margin-top: 8px;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        a img {
+          width: 22px;
+          height: 22px;
+          object-fit: contain;
+          filter: grayscale(0.2);
+          transition: filter 0.2s;
+          &:hover {
+            filter: none;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    margin-top: 18px;
+    padding: 8px 0;
+    border-top: 1px solid #ffe6a7;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #888;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 4px;
+      text-align: center;
+    }
+  }
+}
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 600px) {
+  .main-container {
+    padding: 0 4px;
+  }
+  .advantages-section .section-title,
+  .partners-section h3,
+  .news-section h3 {
+    font-size: 16px;
+  }
+  .about-section .about-info h3,
+  .map-section .map-info h3 {
+    font-size: 14px;
+  }
+  .footer-section .footer-logo img {
+    width: 66px;
+  }
+}
+@media (max-width: 400px) {
+  .advantages-section .advantage-item .circle span,
+  .advantages-section .advantage-item .adv-desc {
+    font-size: 12px !important;
+  }
+  .about-section .about-photo img,
+  .map-section .map-img img {
+    max-width: 95vw;
+  }
+  .news-section .news-card {
+    width: 96vw;
+    img {
+      height: 110px;
+    }
+  }
+}
